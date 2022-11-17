@@ -174,6 +174,7 @@ Instaclone Backend.
 [] "start": "node build/server"
 [] npm run start
 [] npm install --save-dev @babel/plugin-transform-runtime
+   npm install --save @babel/runtime
 [] edit babel.config.json
 - {
     "plugins": ["@babel/plugin-transform-runtime"]
