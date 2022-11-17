@@ -191,6 +191,7 @@ Instaclone Backend.
 [] brew tap heroku/brew && brew install heroku
 [] heroku login
 [] heroku git:remote -a marvininsta
+[] heroku logs --tail
 [] npm i apollo-server-core
 [] server.js
    import {
@@ -207,4 +208,5 @@ Instaclone Backend.
 [] create Procfile file
    release: npx prisma migrate deploy
    web: npm start
+
 ```
