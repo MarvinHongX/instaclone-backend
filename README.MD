@@ -191,5 +191,20 @@ Instaclone Backend.
 [] brew tap heroku/brew && brew install heroku
 [] heroku login
 [] heroku git:remote -a marvininsta
-[] 
+[] npm i apollo-server-core
+[] server.js
+   import {
+   ApolloServerPluginLandingPageGraphQLPlayground
+   } from "apollo-server-core";
+
+   const server = new ApolloServer({
+   typeDefs,
+   resolvers,
+   plugins: [
+   ApolloServerPluginLandingPageGraphQLPlayground(),
+   ],
+   });
+[] create Procfile file
+   release: npx prisma migrate deploy
+   web: npm start
 ```
